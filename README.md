@@ -28,7 +28,7 @@ a corresponding [Digital Ocean Community Tutorial](http://bit.ly/1AGUZkq).
 
 * Initialize the `$OVPN_DATA` container that will hold the configuration files
   and certificates.  The container will prompt for a passphrase to protect the
-  private key used by the newly generated certificate authority.
+  private key used by the newly generated certificate authority. (change DNS for your own or IP)
 
       docker volume create --name $OVPN_DATA
       docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM
